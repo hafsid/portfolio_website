@@ -1,0 +1,109 @@
+*{
+    margin:  0;
+    padding: 0;
+    font-family: 'poppins','sans-serif';
+    box-sizing: border-box;
+
+}
+.container{
+    background-image: url(images/background.jpg);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #080808;
+    background-image: url(images/background.jpg);
+}
+
+h1{
+    background-color: #080808;
+    background-image: url(images/background.jpg);
+    padding-left: 40%;
+    padding-bottom: 50px;
+    padding-top: 20px;
+    font-size: 50px;
+    color:  #86dede;
+    font-family: 'poppins','sans-serif';  
+}
+#portfolio{
+    padding: 50px 0;
+
+}
+.worklist{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    /* margin: 30px; */
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.work a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), #008080);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+    margin-left: -10px;
+    color:  #86dede;
+    font-family: 'poppins','sans-serif';  
+    font-size: 30px;
+
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #008080 ;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+    margin-top: 10%;
+}
+.btn:hover{
+    background: #008080;
+}
+.footer{
+    background-image: url(images/background.jpg);
+    background-color: #080808;  
+}
